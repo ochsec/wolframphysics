@@ -1,0 +1,43 @@
+{
+  "experiment_id": "workflow_initial_20250706_222137",
+  "metadata": {
+    "name": "workflow_initial",
+    "description": "Initial state of workflow demonstration",
+    "created_at": "2025-07-06T22:21:37.210436",
+    "hash": "6dcadb799375ba74882f8937aada02c0",
+    "node_count": 4,
+    "edge_count": 4,
+    "evolution_steps": 0
+  },
+  "snapshot": {
+    "edges": {
+      "e1": [
+        "A",
+        "B"
+      ],
+      "e2": [
+        "B",
+        "C"
+      ],
+      "e3": [
+        "C",
+        "D"
+      ],
+      "e4": [
+        "A",
+        "C"
+      ]
+    },
+    "nodes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "step": 0,
+    "node_count": 4,
+    "edge_count": 4
+  },
+  "evolution_history": [],
+  "exported_at": "2025-07-06T22:21:37.541825"
+}

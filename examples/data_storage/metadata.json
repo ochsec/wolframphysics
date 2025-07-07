@@ -1,0 +1,23 @@
+{
+  "experiments": {
+    "basic_demo_20250706_214928": {
+      "name": "basic_demo",
+      "description": "Basic demonstration of hypergraph evolution",
+      "created_at": "2025-07-06T21:49:28.639362",
+      "hash": "01a5df73ec2665bec4ea344df72c67f0",
+      "node_count": 4,
+      "edge_count": 4,
+      "evolution_steps": 0
+    },
+    "basic_demo_20250706_222137": {
+      "name": "basic_demo",
+      "description": "Basic demonstration of hypergraph evolution",
+      "created_at": "2025-07-06T22:21:37.177787",
+      "hash": "157242070f37354095905c3b60e799dc",
+      "node_count": 4,
+      "edge_count": 4,
+      "evolution_steps": 0
+    }
+  },
+  "created_at": "2025-07-06T21:49:28.634361"
+}

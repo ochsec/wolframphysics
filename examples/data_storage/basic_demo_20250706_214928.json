@@ -1,0 +1,40 @@
+{
+  "name": "basic_demo",
+  "description": "Basic demonstration of hypergraph evolution",
+  "parameters": {
+    "initial_nodes": 4,
+    "initial_edges": 4
+  },
+  "snapshot": {
+    "edges": {
+      "e1": [
+        "A",
+        "B"
+      ],
+      "e2": [
+        "B",
+        "C"
+      ],
+      "e3": [
+        "C",
+        "D"
+      ],
+      "e4": [
+        "A",
+        "C"
+      ]
+    },
+    "nodes": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "step": 0,
+    "node_count": 4,
+    "edge_count": 4
+  },
+  "evolution_history": [],
+  "created_at": "2025-07-06T21:49:28.639362",
+  "hash": "01a5df73ec2665bec4ea344df72c67f0"
+}

@@ -1,0 +1,24 @@
+[project]
+name = "wolfram-physics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "bokeh>=3.7.3",
+    "dask>=2025.5.1",
+    "hypernetx>=2.4.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.3",
+    "numba>=0.61.2",
+    "numpy>=2.2.6",
+    "psutil>=7.0.0",
+    "ray>=2.47.1",
+    "scipy>=1.16.0",
+    "zarr>=3.0.10",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.4.1",
+]

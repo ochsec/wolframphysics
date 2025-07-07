@@ -1,0 +1,41 @@
+{
+  "experiments": {
+    "workflow_initial_20250706_214928": {
+      "name": "workflow_initial",
+      "description": "Initial state of workflow demonstration",
+      "created_at": "2025-07-06T21:49:28.674619",
+      "hash": "25bf2cd1c4d95f129dd617c1f133eef3",
+      "node_count": 4,
+      "edge_count": 4,
+      "evolution_steps": 0
+    },
+    "workflow_final_20250706_214928": {
+      "name": "workflow_final",
+      "description": "Final state of workflow demonstration",
+      "created_at": "2025-07-06T21:49:28.831215",
+      "hash": "fccb9f4e860b3f13408791f13e4b9ec7",
+      "node_count": 7,
+      "edge_count": 4,
+      "evolution_steps": 6
+    },
+    "workflow_initial_20250706_222137": {
+      "name": "workflow_initial",
+      "description": "Initial state of workflow demonstration",
+      "created_at": "2025-07-06T22:21:37.210436",
+      "hash": "6dcadb799375ba74882f8937aada02c0",
+      "node_count": 4,
+      "edge_count": 4,
+      "evolution_steps": 0
+    },
+    "workflow_final_20250706_222137": {
+      "name": "workflow_final",
+      "description": "Final state of workflow demonstration",
+      "created_at": "2025-07-06T22:21:37.355552",
+      "hash": "e43f0039bf3f31da5e8ea876ae606fe7",
+      "node_count": 7,
+      "edge_count": 4,
+      "evolution_steps": 6
+    }
+  },
+  "created_at": "2025-07-06T21:49:28.674597"
+}
