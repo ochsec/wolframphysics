@@ -12,8 +12,10 @@ dependencies = [
     "matplotlib>=3.10.3",
     "numba>=0.61.2",
     "numpy>=2.2.6",
+    "plotly>=6.2.0",
     "psutil>=7.0.0",
     "ray>=2.47.1",
+    "scikit-learn>=1.7.0",
     "scipy>=1.16.0",
     "zarr>=3.0.10",
 ]

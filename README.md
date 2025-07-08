@@ -4,21 +4,31 @@ A comprehensive Python framework for exploring and visualizing the [Wolfram Phys
 
 ## Overview
 
-This project implements Phase 1 of the Wolfram Physics exploration framework, providing core infrastructure for:
+This project implements Phase 1 and Phase 2 of the Wolfram Physics exploration framework, providing comprehensive infrastructure for:
 
 - **Hypergraph Processing**: Create, manipulate, and analyze complex hypergraph structures
 - **Rule-Based Evolution**: Apply Wolfram Physics transformation rules for hypergraph evolution
-- **Visualization**: Generate static and interactive visualizations of evolving hypergraphs
+- **Visualization**: Generate static, interactive, and 3D visualizations of evolving hypergraphs
+- **Real-time Interaction**: Interactive controls for evolution, rule management, and visualization
 - **Data Management**: Efficient storage and retrieval of evolution sequences and experimental data
 
-## Phase 1 Features
+## Features
 
-### Core Components
+### Phase 1 - Core Infrastructure
 
 - **HypergraphProcessor**: Native HyperNetX integration for hypergraph operations
 - **WolframRuleEngine**: Flexible rule-based transformation system
 - **BasicVisualizer**: Matplotlib and Bokeh visualization capabilities
 - **DataManager**: Multiple storage backends (JSON, Pickle, Zarr, SQLite)
+
+### Phase 2 - Interactive Visualization
+
+- **InteractiveVisualizer**: Real-time Bokeh server application with live controls
+- **Visualizer3D**: Interactive 3D visualization using Plotly
+- **Evolution Controls**: Play/pause/step controls with adjustable speed
+- **Rule Management**: Dynamic rule creation, editing, and priority adjustment
+- **Multi-view Dashboard**: Synchronized displays including adjacency matrix, degree distribution, and timeline
+- **Export Capabilities**: Save sessions, export visualizations, and share results
 
 ### Technical Capabilities
 
@@ -89,6 +99,29 @@ evolved_processor = engine.evolve(processor, steps=10)
 # Visualize results
 visualizer = BasicVisualizer(evolved_processor)
 fig = visualizer.plot_static(title="Evolved Hypergraph")
+```
+
+### Interactive Visualization (Phase 2)
+
+```python
+from wolfram_physics import InteractiveVisualizer, Visualizer3D
+
+# Create interactive visualizer
+interactive_viz = InteractiveVisualizer(processor, engine)
+
+# Run Bokeh server application
+# In terminal: bokeh serve --show bokeh_app.py
+
+# Or create 3D visualization
+viz_3d = Visualizer3D(evolved_processor)
+fig_3d = viz_3d.create_3d_plot(layout='spring_3d', show_hyperedges=True)
+fig_3d.write_html("hypergraph_3d.html")
+
+# Create evolution animation
+anim_fig = viz_3d.create_evolution_animation_3d(
+    evolution_history, 
+    duration=500
+)
 ```
 
 ### Advanced Features
@@ -182,10 +215,13 @@ pytest tests/test_hypergraph_processor.py -v
 
 ## Roadmap
 
-### Phase 2: Interactive Visualization (Planned)
-- Real-time evolution controls
-- Interactive parameter adjustment
-- Multi-view dashboards
+### Phase 2: Interactive Visualization ✅ (Completed)
+- Real-time evolution controls with play/pause/step
+- Interactive parameter adjustment for rules and visualization
+- Multi-view dashboards with synchronized displays
+- 3D visualization with Plotly
+- Bokeh server application for web-based interaction
+- Export and session management
 
 ### Phase 3: Distributed Computing (Planned)
 - Ray-based parallel processing
@@ -198,8 +234,10 @@ pytest tests/test_hypergraph_processor.py -v
 - **hypernetx**: Hypergraph processing and analysis
 - **numpy**: Numerical computations
 - **matplotlib**: Static visualizations
-- **bokeh**: Interactive visualizations
+- **bokeh**: Interactive visualizations and server app
+- **plotly**: 3D interactive visualizations
 - **zarr**: Efficient array storage
+- **scikit-learn**: Machine learning algorithms for layouts
 
 ### Optional Dependencies
 - **ray**: Distributed computing (Phase 3)

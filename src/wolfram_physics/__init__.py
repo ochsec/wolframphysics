@@ -9,11 +9,15 @@ Main Components:
 - WolframRuleEngine: Rule-based transformation system
 - BasicVisualizer: Static and interactive visualization
 - DataManager: Efficient storage and retrieval of evolution data
+- InteractiveVisualizer: Real-time interactive visualization with Bokeh
+- Visualizer3D: 3D visualization with Plotly
 
-Phase 1 Implementation includes:
+Phase 1 & 2 Implementation includes:
 - Foundation hypergraph processing infrastructure
 - Basic Wolfram rule system
-- Initial visualization framework
+- Static and interactive visualization frameworks
+- Real-time evolution controls
+- 3D visualization capabilities
 - Data management and storage system
 - Comprehensive test suite
 
@@ -48,8 +52,10 @@ from .hypergraph_processor import HypergraphProcessor
 from .rule_engine import WolframRuleEngine, RewriteRule
 from .visualizer import BasicVisualizer
 from .data_manager import DataManager
+from .interactive_visualizer import InteractiveVisualizer
+from .visualizer_3d import Visualizer3D
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __author__ = "Claude Code"
 __email__ = "noreply@anthropic.com"
 __description__ = "Python framework for Wolfram Physics Project exploration and visualization"
@@ -59,7 +65,9 @@ __all__ = [
     "WolframRuleEngine", 
     "RewriteRule",
     "BasicVisualizer",
-    "DataManager"
+    "DataManager",
+    "InteractiveVisualizer",
+    "Visualizer3D"
 ]
 
 # Package metadata
